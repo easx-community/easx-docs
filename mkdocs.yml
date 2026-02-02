@@ -1,6 +1,8 @@
-site_name: Your Product Documentation
+site_url: https://easx-community.github.io/easx-docs/
+site_name: EASX Documentation Develop Branch
 docs_dir: docs
 site_dir: site
+use_directory_urls: true
 
 theme:
   name: material
