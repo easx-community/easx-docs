@@ -1,5 +1,5 @@
-site_url: https://easx-community.github.io/easx-docs/
 site_name: EASX Documentation Develop Branch
+site_url: https://easx-community.github.io/easx-docs/
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
