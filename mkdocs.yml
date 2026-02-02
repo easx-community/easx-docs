@@ -1,5 +1,5 @@
 site_name: Your Product Documentation
-docs_dir: user
+docs_dir: docs
 site_dir: site
 
 theme:
