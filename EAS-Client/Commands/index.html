@@ -1,0 +1,867 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Settings/">
+      
+      
+        <link rel="next" href="../Deploy-To-Azure/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Commands - Your Product Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#commands-list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Your Product Documentation" class="md-header__button md-logo" aria-label="Your Product Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Your Product Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Your Product Documentation" class="md-nav__button md-logo" aria-label="Your Product Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Your Product Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Getting-Started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-To-Connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How To Connect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Subscriptions--Participants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subscriptions Participants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../APIs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APIs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EAS Client
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    EAS Client
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands list
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deploy-To-Azure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy To Azure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../System-Requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commands list
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Commands</h1>
+
+<p>This document contains detailed description of all commands that are supported by EASX Client.</p>
+<p>To run any of these, you'll need to open a command line / terminal and navigate to the location of EAS Client executable. Next, you can execute commands like this:</p>
+<p><code>EASClient.exe --host</code></p>
+<p>Some of the commands require a parameter. Usually it's a path to file or folder. All paths can be absolute, relative or in any other format supported by the OS. You can omit quotes in case a path contains no whitespaces. Assuming <code>EASClient.exe</code> is located in <code>C:\eas</code>, all following formats are equivalent:</p>
+<p><code>EASClient.exe --receive incoming</code></p>
+<p><code>EASClient.exe --receive "incoming"</code></p>
+<p><code>EASClient.exe --receive C:\eas\incoming</code></p>
+<p><code>EASClient.exe --receive "C:\eas\incoming"</code></p>
+<h2 id="commands-list">Commands list<a class="headerlink" href="#commands-list" title="Permanent link">&para;</a></h2>
+<p><strong>--host</strong></p>
+<p>Launch the client in host mode. An instance of Web GUI and APIs will be hosted locally (http://localhost:5000 by default).</p>
+<p><strong>--debug</strong></p>
+<p>This parameter can be used together with any command to enable verbose logs. For example, launching a client with <code>--debug --host</code> instead of just <code>--host</code> will make it log debug information and server responses.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">[13:44:33 DBG] Hosting starting
+[13:44:33 INF] Now listening on: http://localhost:5000
+[13:44:33 DBG] Loaded hosting startup assembly EASClient
+[13:44:33 INF] Application started. Press Ctrl+C to shut down.
+[13:44:33 INF] Hosting environment: dev
+[13:44:33 INF] Content root path: C:\eas
+[13:44:33 DBG] Hosting started
+</code></pre>
+<p><strong>--list-in</strong></p>
+<p>Get the list of incoming document metadata and print them into console.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">Found 2 incoming documents:
+
+Id  : 8afb7267-b546-4b17-8881-ded17aa9369b
+Date: 16.07.2021 8:47:58
+Type: http://exchange.aeis.ch/xsd/FZL-1.5
+From: CHE109405059
+To  : TESTCLIENTA
+
+
+Id  : 454fbcf4-6e55-401b-b9ff-56f08c2330ce
+Date: 16.07.2021 14:59:52
+Type: http://exchange.aeis.ch/xsd/FZL-1.5
+From: CHE109691681
+To  : TESTCLIENTA
+
+
+All Done
+</code></pre>
+<p><strong>--send "path"</strong></p>
+<p>Send all files from the specified folder. Right now, EAS Client supports XML files with 1.5 schema version. This command automatically encrypts, signs, uploads each document and sends it to receiver, determined by parsing an XML file. After the document was sent, it is moved to the "sent" folder.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">Sending 2 files from &quot;outgoing&quot;:
+sample1.xml - signed - encrypted - uploaded - sent - moved to sent subfolder
+sample2.xml - signed - encrypted - uploaded - sent - moved to sent subfolder
+All Done
+</code></pre>
+<p><strong>--receive "path"</strong></p>
+<p>Receive all incoming documents to the specified folder. The command automatically downloads all documents, decrypts them, stores to the folder, removes from incoming and sends receipts.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">Connecting
+Receiving 2 files to &quot;incoming&quot;:
+8afb7267-b546-4b17-8881-ded17aa9369b - downloaded - received
+960ac6af-3a82-4257-a7d5-8f7e867f86af - downloaded - received
+All Done
+</code></pre>
+<p><strong>--get-receipts "path"</strong></p>
+<p>Get all receipts and save them to the specified folder. This command will also automatically remove receipts from the server side after downloading.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">Connecting
+Receiving 2 files to &quot;receipts&quot;:
+df25485f-89d9-4162-a3cd-f8e3d83a440d - downloaded - cleared
+e6875ec2-634b-4c02-9e14-ed20efbcd9d0 - downloaded - cleared
+All Done
+</code></pre>
+<p>Example file:
+<code>0ad62440-f3ad-411b-a5d8-7794a2c8367c.json</code></p>
+<pre><code class="language-json">{
+  &quot;Id&quot;: &quot;e6875ec2-634b-4c02-9e14-ed20efbcd9d0&quot;,
+  &quot;ReceivedDate&quot;: &quot;2021-07-20T08:14:47.6545973Z&quot;,
+  &quot;TransferId&quot;: &quot;a54c19ea-110f-4785-a5e0-b43662fad41d&quot;,
+  &quot;TransferSenderId&quot;: &quot;TESTCLIENTA&quot;,
+  &quot;TransferReceiverId&quot;: &quot;CHE109691681&quot;,
+  &quot;Code&quot;: &quot;Success&quot;,
+  &quot;Message&quot;: null
+}
+</code></pre>
+<p><strong>--generatekeys "fileprefix"</strong></p>
+<p>Generate RSA2048 private/public keys. The command will store them as files that start with <code>fileprefix</code> parameter, like <code>fileprefix-private-key.pem</code> and <code>fileprefix-public-key.pem</code>. They can later be used while configuring EAS Client.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">Generating private/public key pair files
+Private key file sample-private-key.pem generated
+Public key file sample-public-key.pem generated
+All Done
+</code></pre>
+<p>Example private key:
+<code>sample-private-key.pem</code></p>
+<pre><code class="language-txt">-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAvz9a0E/wfWHNwxoeDPUgTZMCQNcoRDRybObnPtYi7OEnUM420
+cnvQ6/dSVn0FWx49CPSyeEeMzBeqHKqFPI/vC3hw8tm8PYxjNEVi/0KKy7df/Ew+/
+bpoRtvVlqppIVXaG/j1PwF7/qVt8Pdl715I5qxylhqrest1d2BoxyOPmr01UIAk5t
+9fuNxXhhAZ06jq420KdWty1MpCUATNFPyDk6JYb7V+yd6hh2TpFcbB6egMlgkzbnY
+rS668ya6d2XSRch4AIxnpFmwV9K9TvXSa13+UW1Z1qjhb/zKdm49kKWSljC/cRUnZ
+OCQ6TrNKuYyo1/qoaptdgWMMm9HyZzWxQIDAQABAoIBABh0RWx1jE67/s9/u2/0uB
+izP4qC+IcgHbGHJPKH9xdLAvf2JlRU+d8x0Z3bfrZulFjDa+ScgHwTJ0dqwgzDnRq
+20zNyAsu070kOQy8PQAmdiH0fnh/Zxq3vECF+nkqHMlIMXJmTUD8LT7Gbve31MFQ5
+J5q0C5AJjmbWWAk/UYDxe2QJ1/dQO9D0IisgF1UMV5pkB+BUXiUJ237G++4K4HhFB
+NklfakP4X4Q1Wde/UjX9z+VvTPB4WGQxQZvtDOwo8IHs/6DRTXnyRy2NReGs9DMTd
+pbM3NkmOHS91/FjIpwPYRMcCI9QMMmRF0VEHn8IbAUo+OeQFN1NDbLWR2sjVECgYE
+A8iBeb8Gtuo8TN0uUJ2ion7L2ZzR59jq/itM/PHcEUZVzgJTqErpLfHTaG224p54a
++QmB0WF3f6c9K0lfHgr7A5ZyonpntkQTVUnjHJy0PoGyjUmI6huUnHSfcCWST0lBK
+SiYrcvnAa64ABnk/Ib8hh9Tfjmt/1Up0HodKflbmVMCgYEAyjSq/SwaY7XFn2UsaI
+JiqnC4d/XW79qgjfCFN11sgq6yzD9BzDfFEFZa8oZmll2JOoqQSJ+7SWYrCUWt3oz
+F+3L8sQq/hfXvI1Foqyb1l5gKD+0ZagfRDazrbgclmvEZJAElju+tYi+mkHaT18G1
+wC7Ol+ZkqjJJG8QQn09JlIcCgYBGDhuE1lL/0XnL2/BH3r47RrqIbeSD28ej0S9Qv
+VbgjA9ZOrznIkPJBL4+hWaSCOrg92E6RasfojHOnnII7UBnb1ZHsIblc5jsam5tzu
+FP3JLe0lHs+oHrKsse1aAZlKZn1DkowABcukK+tL9OWXgjDllIAkRXxjpM+agKhv1
+7xQKBgQCKwVGEobsKKTYPhzHOFYr3QpqTVxPDS9dZD2+a6nUHyDHRjqbsKGkGKPwH
+6MqE7HK6xVL1QwcV+xIVLsd9LES/o8xbAPEkT/tl1PtqVzW4bRCalS0XYX3HUJ3Nx
+wG7LS7/Ufof98CW2/QEthoFuFusIXKLMgJp+E/KyeROLe5kCQKBgB77bIeSGhdFpn
+OumV63qHZK0sFqeaeaBjbIaz+jcuUo//VVpJHUpV6+zzN2zbw6WYvB0Bpa2MrZJnm
+RYu1s8MsrEv8yHLjRzeE27l3dUM4z5Wa2v+dFf4Pp0uOoY7t0I8DZzvdN4QPgsP3d
+AWTrXJ3/ej6c9AI2EtctY6aSWSQx
+-----END RSA PRIVATE KEY-----
+</code></pre>
+<p>Example public key:
+<code>sample-public-key.pem</code></p>
+<pre><code class="language-txt">-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvz9a0E/wfWHNwxoeDPUgT
+ZMCQNcoRDRybObnPtYi7OEnUM420cnvQ6/dSVn0FWx49CPSyeEeMzBeqHKqFPI/vC
+3hw8tm8PYxjNEVi/0KKy7df/Ew+/bpoRtvVlqppIVXaG/j1PwF7/qVt8Pdl715I5q
+xylhqrest1d2BoxyOPmr01UIAk5t9fuNxXhhAZ06jq420KdWty1MpCUATNFPyDk6J
+Yb7V+yd6hh2TpFcbB6egMlgkzbnYrS668ya6d2XSRch4AIxnpFmwV9K9TvXSa13+U
+W1Z1qjhb/zKdm49kKWSljC/cRUnZOCQ6TrNKuYyo1/qoaptdgWMMm9HyZzWxQIDAQ
+AB
+-----END PUBLIC KEY-----
+</code></pre>
+<p><strong>--help</strong></p>
+<p>Prints client version and a list of supported commands into console.</p>
+<p>Example output:</p>
+<pre><code class="language-txt">EAS Client version 0.8.3.0
+
+The app can be used to call EAS Hub and Directory APIs from the command line. It is also possible to run the app in host mode to get local Web UI and a local instance of all APIs.
+Use one of the following arguments:
+ --list-in : Get the list of incoming document IDs
+ --send &quot;path&quot; : Send all files from the specified folder
+ --receive &quot;path&quot; : Receive all incoming files to the specified folder.
+ --get-receipts &quot;path&quot; : Get all receipts to the specified folder.
+ --generatekeys &quot;fileprefix&quot; : Generate private/public key files.
+ --host : Run the app in hosted mode.
+
+Navigate to the following URL for more information: https://docs.easx.ch
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
